@@ -1,0 +1,10 @@
+<!--components/href-card/href-card.wxml-->
+<view class="href-card" style="background-color: {{backgroundColor}};">
+    <view class="card-text">
+        <view class="card-text_title">{{textTitle}}</view>
+        <view class="card-text_desc">{{textDesc}}</view>
+    </view>
+    <view class="card-img">
+        <image src="{{imgSrc}}"></image>
+    </view>
+</view>

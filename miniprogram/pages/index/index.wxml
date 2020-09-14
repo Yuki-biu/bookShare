@@ -1,0 +1,7 @@
+<nav-bar title="校园书友" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>
+<view class="main">
+    <href-card backgroundColor="#43cf7c" textTitle="社区" textDesc="快来看看大家在讨论什么吧~"></href-card>
+    <href-card backgroundColor="#8fe9b3" textTitle="读书小队" textDesc="加入读书小队，一起读书吧！"></href-card>
+    <href-card backgroundColor="#43cf7c" textTitle="今日打卡" textDesc="今天你打卡了吗？"></href-card>
+</view>
+  

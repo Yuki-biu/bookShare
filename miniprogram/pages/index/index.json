@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "href-card": "/components/href-card/href-card"
+  }
+}

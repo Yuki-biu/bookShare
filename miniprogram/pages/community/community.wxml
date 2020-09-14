@@ -1,0 +1,2 @@
+<!--miniprogram/pages/community/community.wxml-->
+<nav-bar title="社区" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>

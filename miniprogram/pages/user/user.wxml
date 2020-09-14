@@ -1,0 +1,2 @@
+<!--miniprogram/pages/user/user.wxml-->
+<nav-bar title="我的" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>

@@ -1,0 +1,14 @@
+/* components/nav-bar/nav-bar.wxss */
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.nav-bar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+    font-size: 34rpx;
+}
