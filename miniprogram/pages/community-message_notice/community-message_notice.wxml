@@ -1,0 +1,14 @@
+<!--miniprogram/pages/community-message_notice/community-message_notice.wxml-->
+<!-- 头部 -->
+<nav-bar title="社区" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#505050"></nav-bar>
+
+<view class="tabs">
+  <van-tabs color="#43cf7c" type="card" animated>
+    <van-tab title="评论">内容 1</van-tab>
+    <van-tab title="赞">内容 2</van-tab>
+    <van-tab title="通知">
+      <follow-card></follow-card>
+    </van-tab>
+  </van-tabs>
+</view>
+

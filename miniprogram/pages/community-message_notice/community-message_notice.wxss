@@ -1,0 +1,4 @@
+/* miniprogram/pages/community-message_notice/community-message_notice.wxss */
+.tabs {
+    margin-top: 28rpx;
+}
