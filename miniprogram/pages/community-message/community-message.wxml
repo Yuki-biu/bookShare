@@ -1,6 +1,12 @@
 <!--miniprogram/pages/community-message_notice/community-message_notice.wxml-->
-<!-- 头部 -->
-<nav-bar title="社区" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#505050"></nav-bar>
+<nav-bar 
+  title="社区" 
+  statusBarColor="#8fe9b3" 
+  navBarColor="#8fe9b3" 
+  titleColor="#fff"
+  showBtn="true" 
+  redirectUrl="/pages/community/community">
+</nav-bar>
 
 <view class="tabs">
   <van-tabs color="#43cf7c" type="card" animated>

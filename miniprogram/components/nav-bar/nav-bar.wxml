@@ -5,8 +5,12 @@
     <view class="container">
         <!-- 手机头部显示电量栏 -->
         <view style="{{statusBarStyle}}"></view>
+        
         <view class="nav-bar" style="{{navBarStyle}}">
-            {{title}}
+            <view wx-if="{{showBtn}}" class="backBtn" bindtap="toPage">
+                <image src="/images/back_white.png"/>
+            </view>
+            <view>{{title}}</view>
         </view>
     </view>
 </view>

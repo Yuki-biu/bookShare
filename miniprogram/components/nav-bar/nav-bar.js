@@ -19,6 +19,14 @@ Component({
     titleColor: {
       type: String,
       value: '#000'
+    },
+    showBtn: {
+      type: Boolean,
+      value: false
+    },
+    redirectUrl: {
+      type: String,
+      value: ''
     }
   },
 
@@ -55,6 +63,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toPage() {
+      // wx.redirectTo({
+      //   url: this.data.redirectUrl
+      // });
+      wx.switchTab({
+        url: this.data.redirectUrl
+      })
+    },
   }
 })

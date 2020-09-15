@@ -1,1 +1,5 @@
 /* miniprogram/pages/community/community.wxss */
+.tabs,
+.tabs van-tab {
+    margin-top: 28rpx;
+}

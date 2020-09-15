@@ -8,6 +8,18 @@ Page({
 
   },
 
+  toMessage(event) {
+    console.log(event)
+    console.log(event.detail.index == 2)
+    if (event.detail.index == 2) {
+      wx.redirectTo({
+        url: '/pages/community-message/community-message'
+      });
+    }
+  },
+  
+    
+
   /**
    * 生命周期函数--监听页面加载
    */

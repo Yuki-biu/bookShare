@@ -2,8 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/community/community",
-    "pages/user/user",
-    "pages/community-message/community-message"
+    "pages/community-message/community-message",
+    "pages/user/user"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -40,6 +40,8 @@
   "usingComponents": {
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
-    "nav-bar": "/components/nav-bar/nav-bar"
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
   }
 }

@@ -1,2 +1,14 @@
 <!--miniprogram/pages/community/community.wxml-->
 <nav-bar title="社区" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>
+
+<view class="tabs">
+    <van-tabs color="#43cf7c" type="card" animated bind:click="toMessage">
+      <van-tab title="最新">
+
+      </van-tab>
+      <van-tab title="关注">
+        
+      </van-tab>
+      <van-tab title="消息"></van-tab>
+    </van-tabs>
+  </view>
