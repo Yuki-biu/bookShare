@@ -1,1 +1,19 @@
 <!--components/follow-card/follow-card.wxml-->
+<view class="follow-card">
+    <view class="user-img">
+        <image src="{{avatarUrl}}"></image>
+    </view>
+    <view class="info">
+        <view class="title">
+            <text class="user-name">{{userName}}</text>
+            <text class="info-type">{{infoTypes[infoType]}}</text>
+        </view>
+        <view class="detail" wx-if="{{hasDetail}}">
+            <text>{{infoDetail}}</text>
+        </view>
+        <view class="time">
+            <text>{{infoTime}}</text>
+        </view>
+    </view>
+    
+</view>

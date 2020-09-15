@@ -1,1 +1,56 @@
 /* components/follow-card/follow-card.wxss */
+.follow-card {
+    display: flex;
+    height: fit-content;
+    padding: 20rpx;
+    box-sizing: border-box;
+    border: 1px solid #43cf7c;
+    width: 750rpx;
+}
+
+.user-img {
+    flex: 0 100rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40rpx;
+}
+.user-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    flex: 1;
+    font-size: 32rpx;
+}
+.info .title {
+    width: 100%;
+    display: flex;
+}
+.info .title .user-name {
+    flex: 1;
+    color: #000;
+    max-width: 230rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info .title .info-type {
+    color: #505050;
+    margin-left: 18rpx;
+    width: 320rpx;
+}
+.info .detail {
+    margin-top: 18rpx;
+    color: #505050;
+    max-width: 540rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info .time {
+    margin-top: 18rpx;
+    font-size: 24rpx;
+}

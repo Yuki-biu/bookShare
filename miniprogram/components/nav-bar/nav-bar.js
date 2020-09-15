@@ -47,7 +47,7 @@ Component({
         topHeight
       })
 
-      console.log(this.data)
+      // console.log(this.data)
     }
   },
 

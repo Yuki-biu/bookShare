@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/community/community",
     "pages/user/user",
-    "pages/community-message_notice/community-message_notice"
+    "pages/community-message/community-message"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -30,12 +30,6 @@
         "selectedIconPath": "images/community-select.png"
       },
       {
-        "pagePath": "pages/community-message_notice/community-message_notice",
-        "text": "社区",
-        "iconPath": "images/community.png",
-        "selectedIconPath": "images/community-select.png"
-      }
-      ,{
         "pagePath": "pages/user/user",
         "text": "我的",
         "iconPath": "images/user.png",
@@ -45,6 +39,7 @@
   },
   "usingComponents": {
     "van-tab": "@vant/weapp/tab/index",
-    "van-tabs": "@vant/weapp/tabs/index"
+    "van-tabs": "@vant/weapp/tabs/index",
+    "nav-bar": "/components/nav-bar/nav-bar"
   }
 }
