@@ -1,18 +1,48 @@
 <!--components/follow-card/follow-card.wxml-->
+<!-- 高度设置为fit-content方便复用 -->
 <view class="follow-card">
-    <view class="user-img">
-        <image src="{{avatarUrl}}"></image>
+    <view class="card-left">
+        <view class="user-img">
+            <image src="{{avatarUrl}}"></image>
+        </view>
+        <!-- 只在动态页面显示关注 点赞 评论图标 -->
+        <view class="user-func" wx-if="{{infoType == 3}}">
+            <view class="follow">+关注</view>
+            <view class="like" bindtap="changeLike">
+                <image src="{{likeIcon}}" />
+            </view>
+            <view class="comment">
+                <image src="{{commentIcon}}" />
+            </view>
+        </view>
     </view>
+    <!-- 详细信息 -->
     <view class="info">
+        <!-- title部分放userName和具体事项 -->
         <view class="title">
             <text class="user-name">{{userName}}</text>
             <text class="info-type">{{infoTypes[infoType]}}</text>
         </view>
+        <!-- 点赞通知或动态卡片隐藏这部分 -->
         <view class="detail" wx-if="{{hasDetail}}">
             <text>{{infoDetail}}</text>
         </view>
+        <!-- 动作时间 显示日期 -->
         <view class="time">
             <text>{{infoTime}}</text>
+        </view>
+        <!-- 只有动态卡片才会显示的部分 -->
+        <view class="share-card" wx-if="{{infoType == 3}}">
+            <view class="share-text">
+                <text>
+                    1叽里呱啦叽里呱啦叽里呱啦叽里呱啦<br/>
+                    2叽里呱啦<br/>
+                    3叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦<br/>
+                    4叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦叽里呱啦<br/>
+                </text>
+            </view>
+            <!-- wx:for循环出已有的图片 用百分比宽 float:left -->
+            <view class="share-imgs"></view>
         </view>
     </view>
     

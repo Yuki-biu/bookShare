@@ -4,7 +4,7 @@
 <view class="tabs">
     <van-tabs color="#43cf7c" type="card" animated bind:click="toMessage">
       <van-tab title="最新">
-
+        <follow-card infoType="3"></follow-card>
       </van-tab>
       <van-tab title="关注">
         
