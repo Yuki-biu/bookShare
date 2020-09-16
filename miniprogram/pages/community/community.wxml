@@ -7,7 +7,7 @@
         <follow-card infoType="3"></follow-card>
       </van-tab>
       <van-tab title="关注">
-        
+        <follow-card infoType="3"></follow-card>
       </van-tab>
       <van-tab title="消息"></van-tab>
     </van-tabs>

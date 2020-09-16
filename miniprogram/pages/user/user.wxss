@@ -1,1 +1,4 @@
 /* miniprogram/pages/user/user.wxss */
+.wrapper {
+    margin-top: 28rpx;
+}

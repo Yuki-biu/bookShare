@@ -9,8 +9,7 @@ Page({
   },
 
   toMessage(event) {
-    console.log(event)
-    console.log(event.detail.index == 2)
+    // console.log(event)
     if (event.detail.index == 2) {
       wx.redirectTo({
         url: '/pages/community-message/community-message'

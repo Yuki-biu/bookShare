@@ -1,4 +1,13 @@
 <!--components/follow-card/follow-card.wxml-->
+<!-- 
+    ###备注
+    传入值：
+    infoType: 0 评论
+              1 点赞
+              2 关注
+              3 动态卡片
+    userID: 用于检索userName和userAvatar
+ -->
 <!-- 高度设置为fit-content方便复用 -->
 <view class="follow-card">
     <view class="card-left">
@@ -7,7 +16,10 @@
         </view>
         <!-- 只在动态页面显示关注 点赞 评论图标 -->
         <view class="user-func" wx-if="{{infoType == 3}}">
-            <view class="follow">+关注</view>
+            <view class="follow {{isFollow ? 'followed' : ''}}"  bindtap="changeFollow">
+                <text wx:if="{{isFollow}}">已关注</text>
+                <text wx:else>+关注</text>
+            </view>
             <view class="like" bindtap="changeLike">
                 <image src="{{likeIcon}}" />
             </view>
@@ -24,7 +36,7 @@
             <text class="info-type">{{infoTypes[infoType]}}</text>
         </view>
         <!-- 点赞通知或动态卡片隐藏这部分 -->
-        <view class="detail" wx-if="{{hasDetail}}">
+        <view class="detail" wx:if="{{hasDetail}}">
             <text>{{infoDetail}}</text>
         </view>
         <!-- 动作时间 显示日期 -->
@@ -32,7 +44,7 @@
             <text>{{infoTime}}</text>
         </view>
         <!-- 只有动态卡片才会显示的部分 -->
-        <view class="share-card" wx-if="{{infoType == 3}}">
+        <view class="share-card" wx:if="{{infoType == 3}}">
             <view class="share-text">
                 <text>
                     1叽里呱啦叽里呱啦叽里呱啦叽里呱啦<br/>
@@ -42,7 +54,9 @@
                 </text>
             </view>
             <!-- wx:for循环出已有的图片 用百分比宽 float:left -->
-            <view class="share-imgs"></view>
+            <view class="share-imgs" wx:if="{{imgsUrl.length}}">
+                <image wx:for="{{imgsUrl}}" src="{{item}}"></image>
+            </view>
         </view>
     </view>
     

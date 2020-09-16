@@ -1,0 +1,12 @@
+<!--components/cards/cards.wxml-->
+
+<view class="card-wrapper">
+    <view class="avatar-wrapper">
+        <image src="{{userAvatar}}" />
+    </view>
+    <view class="info-wrapper">
+        <view class="user-name">{{userName}}</view>
+        <view class="group">{{groupName}}</view>
+        <view class="record">已连续打卡{{recordDay}}天</view>
+    </view>
+</view>

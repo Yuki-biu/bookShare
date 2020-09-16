@@ -1,2 +1,9 @@
 <!--miniprogram/pages/user/user.wxml-->
 <nav-bar title="我的" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>
+
+<view class="wrapper">
+    <!-- 名片组件 -->
+    <cards></cards>
+    <!-- 打卡日历 -->
+    <calendar></calendar>
+</view>

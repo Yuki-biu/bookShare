@@ -22,15 +22,28 @@ Component({
     infoTypes: ['评论了', '点赞了你的社区动态', '关注了你', '发布了动态：'],
     infoDetail: '你看到我啦？那你获取数据失败辣!试一试会不会变成省略号',
     infoTime: '2020-09-15',
-    userName: '神乐神乐神乐神乐神乐神乐神乐神乐神乐神乐',
-    avatarUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600164985690&di=6ee2862862266ee7c44f27adf46c4487&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc29e4c72331db35e3fab2fed6f2de67fce4b64fd.jpg',
+    userName: '晴明',
+    avatarUrl: '/images/test6.jpg',
     // 评论&&点赞
     hasDetail: true,
+    // 关注
+    isFollow: false,
     // 动态卡片数据
     isLike: false,
     likeIcons: ['/images/like.png', '/images/like_no.png'],
     likeIcon: '',
     commentIcon: '/images/comment.png',
+    imgsUrl: [
+      '/images/test1.jfif',
+      '/images/test2.jpg',
+      '/images/test3.jpg',
+      '/images/test4.jpg',
+      '/images/test5.jpg',
+      '/images/test6.jpg',
+      '/images/test7.jpg',
+      '/images/test8.jpg',
+      '/images/test9.jpg',
+    ]
   },
 
   /**
@@ -41,6 +54,7 @@ Component({
     getUserInfo() {
 
     },
+    // 判断是否需要摘要信息
     hideDetail() {
       if (this.data.infoType == '2' || this.data.infoType == '3') {
         this.setData({
@@ -48,12 +62,20 @@ Component({
         })
       }
     },
+    // 点击关注按钮
+    changeFollow() {
+      this.setData({
+        isFollow: !this.data.isFollow
+      })
+    },
+    // 点击点赞按钮
     changeLike() {
       this.setData({
         isLike: !this.data.isLike
       })
       this.giveLikeIcon()
     },
+    // 同步改变点赞图标
     giveLikeIcon() {
       if (this.data.isLike) {
         this.setData({

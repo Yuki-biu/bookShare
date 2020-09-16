@@ -1,0 +1,38 @@
+/* components/cards/cards.wxss */
+.card-wrapper {
+    background-color: #8fe9b3;
+    width: 690rpx;
+    height: 240rpx;
+    border-radius: 90rpx;
+    margin: 0 auto;
+    display: flex;
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+
+.avatar-wrapper {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar-wrapper image {
+    width: 100%;
+    height: 100%;
+}
+
+.info-wrapper {
+    margin-left: 30rpx;
+    color: #fff;
+}
+.info-wrapper view {
+    margin-bottom: 24rpx;
+}
+.info-wrapper .user-name {
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.info-wrapper .record,
+.info-wrapper .group {
+    font-size: 28rpx;
+}

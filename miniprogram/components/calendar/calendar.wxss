@@ -1,0 +1,65 @@
+/* components/calendar/calendar.wxss */
+.calendar {
+    width: fit-content;
+    text-align: center;
+    font-size: 30rpx;
+    margin: 46rpx 28rpx;
+    border: 1px solid #43cf7c;
+    box-shadow: 0 2px 10px 3px #43cf7c;
+}
+.calendar-title {
+    padding: 20rpx;
+    text-align: left;
+    color: #43cf7c;
+}
+.calendar-title .item {
+    line-height: 50rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+.calendar-title .title {
+    text-align: center;
+    min-width: 300rpx;
+}
+.calendar-week {
+    display: flex;
+    text-align: center;
+    padding: 20rpx 10rpx;
+    border-top: 1rpx solid #e0e0e0;
+    border-bottom: 1rpx solid #e0e0e0;
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+.calendar-week .item {
+    flex: 1;
+    color: #43cf7c;
+}
+
+/* 日期 */
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20rpx 10rpx;
+}
+.calendar-container .grid {
+    display: inline-block;
+    width: 14.2%;
+    line-height: 88rpx;
+    position: relative;
+    z-index: 1;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+.calendar-container .grid.gray {
+    color: #ccc;
+    background-color: #f3f3f3;
+}
+.calendar-container .grid.success {
+    color: #fff;
+    background-color: #8fe9b3;
+}
+.calendar-container .grid .wrap.select {
+    background-color: #43cf7c;
+    color: #fff;
+}
+

@@ -37,7 +37,12 @@
 
 .follow {
     border: 1px solid #43cf7c;
-    border-radius: 4px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.followed {
+    background-color: #43cf7c;
+    color: #fff;
 }
 
 .like,
@@ -98,4 +103,14 @@
     word-break: break-all;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+}
+
+.share-imgs {
+    width: 540rpx;
+    height: 540rpx;
+    margin: 28rpx auto;
+}
+.share-imgs image {
+    width: 33%;
+    height: 33%;
 }

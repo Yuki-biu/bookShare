@@ -18,7 +18,7 @@ Component({
     },
     imgSrc: {
       type: String,
-      value: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3125531893,1726858660&fm=26&gp=0.jpg'
+      value: '/images/test1.jfif'
     }
   },
 
