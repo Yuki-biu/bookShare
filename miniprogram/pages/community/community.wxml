@@ -11,4 +11,4 @@
       </van-tab>
       <van-tab title="消息"></van-tab>
     </van-tabs>
-  </view>
+</view>

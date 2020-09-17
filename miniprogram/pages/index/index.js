@@ -12,7 +12,13 @@ Page({
 
   goCommunity() {
     wx.switchTab({
-      url: '/community'
+      url: '/pages/community/community'
+    })
+  },
+
+  goReadingGroup() {
+    wx.navigateTo({
+      url: '/pages/reading-group/reading-group'
     })
   },
 
