@@ -10,6 +10,12 @@ Page({
     requestResult: ''
   },
 
+  goCommunity() {
+    wx.switchTab({
+      url: '/community'
+    })
+  },
+
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
