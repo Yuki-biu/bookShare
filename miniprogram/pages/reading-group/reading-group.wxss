@@ -1,1 +1,5 @@
 /* miniprogram/pages/reading-group/reading-group.wxss */
+.tabs,
+.tabs van-tab {
+    margin-top: 28rpx;
+}

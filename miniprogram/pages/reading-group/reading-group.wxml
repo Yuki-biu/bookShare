@@ -1,5 +1,12 @@
 <!--miniprogram/pages/reading-group/reading-group.wxml-->
-<nav-bar title="读书小队" statusBarColor="#8fe9b3" navBarColor="#8fe9b3" titleColor="#fff"></nav-bar>
+<nav-bar 
+  title="读书小队" 
+  statusBarColor="#8fe9b3" 
+  navBarColor="#8fe9b3" 
+  titleColor="#fff"
+  showBtn="true"
+  redirectUrl="/pages/index/index"
+  ></nav-bar>
 
 <view class="tabs">
     <van-tabs color="#43cf7c" type="card" animated>
@@ -7,7 +14,7 @@
         <follow-card infoType="3"></follow-card>
       </van-tab>
       <van-tab title="我的小队">
-        <follow-card infoType="3"></follow-card>
+        <my-group></my-group>
       </van-tab>
       <van-tab title="我的打卡"></van-tab>
     </van-tabs>
