@@ -44,6 +44,8 @@
     "nav-bar": "/components/nav-bar/nav-bar",
     "van-sidebar": "@vant/weapp/sidebar/index",
     "van-sidebar-item": "@vant/weapp/sidebar-item/index",
-    "follow-card": "/components/follow-card/follow-card"
+    "follow-card": "/components/follow-card/follow-card",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index"
   }
 }

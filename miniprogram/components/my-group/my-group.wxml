@@ -10,6 +10,11 @@
         </view>
     </view>
     <view class="buttons">
-        
+        <van-grid>
+            <van-grid-item icon="contact" text="小组成员" />
+            <van-grid-item icon="certificate" text="今日打卡" />
+            <van-grid-item icon="edit" text="去打卡" />
+            <van-grid-item icon="share" text="分享" />
+        </van-grid>
     </view>
 </view>

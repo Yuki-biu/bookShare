@@ -1,9 +1,34 @@
 /* components/my-group/my-group.wxss */
 .group-card {
-    width: 690rpx;
-    margin: 0 auto;
-    padding: 30rpx;
+    width: 100%;
+    border: 1px solid #8fe9b3;
+    box-sizing: border-box;
 }
 .group-card .group-info {
     display: flex;
+    padding: 30rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8fe9b3;
+}
+.group-card .group-info .avatar {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.group-card .group-info .avatar image {
+    width: 100%;
+    height: 100%;
+}
+.group-card .group-info .desc {
+    color: #505050;
+    padding-left: 40rpx;
+}
+.group-card .group-info .desc view {
+    margin-top: 18rpx;
+}
+
+.group-card .buttons {
+    width: 100%;
 }
