@@ -1,4 +1,15 @@
 <!--components/my-group/my-group.wxml-->
 <view class="group-card">
-    
+    <view class="group-info">
+        <view class="avatar">
+            <image src="/images/test5.jpg" />
+        </view>
+        <view class="desc">
+            <view class="group-title">groupName</view>
+            <view class="group-success">已有x人完成打卡</view>
+        </view>
+    </view>
+    <view class="buttons">
+        
+    </view>
 </view>

@@ -1,1 +1,9 @@
 /* components/my-group/my-group.wxss */
+.group-card {
+    width: 690rpx;
+    margin: 0 auto;
+    padding: 30rpx;
+}
+.group-card .group-info {
+    display: flex;
+}
